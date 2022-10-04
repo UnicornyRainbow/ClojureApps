@@ -4,8 +4,7 @@
 ; Please see https://calva.io/output/ for more info.
 ; Happy coding! ♥️
 
-; Jacking in...
-; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"1.0.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.28.5"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Connecting ...
 ; Hooking up nREPL sessions...
 ; Connected session: clj
 ; TIPS:
@@ -16,20 +15,233 @@
 ;      when the cursor is after the last contents at the prompt
 ;   - Clojure lines in stack traces are peekable and clickable.
 clj꞉learningapps.core꞉>  ; Use `alt+enter` to evaluate
-; Jack-in done.
+; Syntax error compiling at (src/learningapps/calculator.clj:6:1).
+; Unable to resolve symbol: defn in this context
+clj꞉learningapps.calculator꞉> 
+; Syntax error compiling at (src/learningapps/calculator.clj:6:1).
+; Unable to resolve symbol: defn in this context
+clj꞉learningapps.calculator꞉> 
+nil
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getOperator
+clj꞉learningapps.calculator꞉> 
+(getOperator (set '("+" "-" "/" "*")))
+What operation do you want to do? (* / - +)
+; Execution error (ClassCastException) at learningapps.calculator/getOperator (form-init12412903693678253717.clj:13).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉learningapps.calculator꞉> 
+#'learningapps.core/end
 clj꞉learningapps.core꞉> 
-#'learningapps.core/-main
-clj꞉learningapps.core꞉> 
-#'learningapps.core/chooseApp
+(end)
+Do you want to start a new app?(y/n)
+; nREPL Connection was closed
+; Connecting ...
+; No nrepl port file found.
+; Hooking up nREPL sessions...
+; Connecting ...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
 clj꞉learningapps.core꞉> 
 #'learningapps.core/end
 clj꞉learningapps.core꞉> 
-#'learningapps.core/idxOf
+(end)
+Do you want to start a new app?(y/n)
+no
+nil
 clj꞉learningapps.core꞉> 
-#'learningapps.core/App2
+(println (str "What operation do you want to do? (" (str/join " " (set '("+" "-" "/" "*"))) ")"))
+; Syntax error compiling at (.calva/output-window/output.calva-repl:59:53).
+; No such namespace: str
 clj꞉learningapps.core꞉> 
-#'learningapps.core/App3
-clj꞉learningapps.core꞉> 
+nil
+clj꞉learningapps.calculator꞉> 
+(println (str "What operation do you want to do? (" (str/join " " (set '("+" "-" "/" "*"))) ")"))
+What operation do you want to do? (* / - +)
+nil
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getOperator
+clj꞉learningapps.calculator꞉> 
+(getOperator (set '("+" "-" "/" "*")))
+What operation do you want to do? (* / - +)
+nil
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getOperator
+clj꞉learningapps.calculator꞉> 
+(getOperator (set '("+" "-" "/" "*")))
+What operation do you want to do? (* / - +)
+"+"
+clj꞉learningapps.calculator꞉> 
+(getOperator (set '("+" "-" "/" "*")))
+What operation do you want to do? (* / - +)
+Invalid Operator
+What operation do you want to do? (* / - +)
+Invalid Operator
+What operation do you want to do? (* / - +)
+"*"
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/foo
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getOperator
+clj꞉learningapps.calculator꞉> 
+(getOperator (set '("+" "-" "/" "*")))
+What operation do you want to do? (* / - +)
+nil
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/foo
+clj꞉learningapps.calculator꞉> 
+(foo (set '("+" "-" "/" "*")))
+What operation do you want to do? (* / - +)
+nil
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/foo
+clj꞉learningapps.calculator꞉> 
+(foo (set '("+" "-" "/" "*")))
+What operation do you want to do? (* / - +)
+"+"
+clj꞉learningapps.calculator꞉> 
+(foo (set '("+" "-" "/" "*")))
+What operation do you want to do? (* / - +)
+Invalid Operator
+What operation do you want to do? (* / - +)
+Invalid Operator
+What operation do you want to do? (* / - +)
+"/"
+clj꞉learningapps.calculator꞉> 
+; Syntax error compiling at (src/learningapps/calculator.clj:34:39).
+; Unable to resolve symbol: i in this context
+clj꞉learningapps.calculator꞉> 
+; Syntax error compiling at (src/learningapps/calculator.clj:37:35).
+; Unable to resolve symbol: i in this context
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getNumber
+clj꞉learningapps.calculator꞉> 
+(getNumber 2 "+")
+Enter number 3
+nil
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getNumber
+clj꞉learningapps.calculator꞉> 
+(getNumber 2 "+")
+Enter number 3
+2
+clj꞉learningapps.calculator꞉> 
+(getNumber 2 "/")
+Enter number 3
+1
+clj꞉learningapps.calculator꞉> 
+(getNumber 2 "/")
+Enter number 3
+You can't divide by 0
+Enter number 3
+2
+clj꞉learningapps.calculator꞉> 
+(getNumber 1 "/")
+Enter number 2
+5
+clj꞉learningapps.calculator꞉> 
+(getNumber 2 "/")
+Enter number 3
+You can't divide by 0
+Enter number 3
+1
+clj꞉learningapps.calculator꞉> 
+(getNumber 0 "/")
+Enter number 1
+0
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getOperator
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getCountCalculations
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getNumber
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/init
+clj꞉learningapps.calculator꞉> 
+(init)
+Claculator
+What operation do you want to do? (* / - +)
+Wie viele Zahlen wollen sie verrechnen?
+Enter number 1
+Enter number 2
+Enter number 3
+()
+plus
+nil
+clj꞉learningapps.calculator꞉> 
+(list (dotimes [i (getCountCalculations)] (getNumber i "+")))
+Wie viele Zahlen wollen sie verrechnen?
+Enter number 1
+Enter number 2
+Enter number 3
+(nil)
+clj꞉learningapps.calculator꞉> 
+(repeat 5 (getNumber 5 operator))
+; Syntax error compiling at (.calva/output-window/output.calva-repl:185:11).
+; Unable to resolve symbol: operator in this context
+clj꞉learningapps.calculator꞉> 
+
+(repeat 5 (getNumber 5 "+"))
+Enter number 6
+(1 1 1 1 1)
+clj꞉learningapps.calculator꞉> 
+(repeatedly 5 (getNumber 5 "+"))
+Enter number 6
+; Error printing return value (ClassCastException) at clojure.core/repeatedly$fn (core.clj:5138).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉learningapps.calculator꞉> 
+(read-string "+")
++
+clj꞉learningapps.calculator꞉> 
+((read-string "+") 1 2)
+2
+clj꞉learningapps.calculator꞉> 
+("+")
+; Execution error (ClassCastException) at learningapps.calculator/eval2141 (form-init9194917033910880331.clj:205).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉learningapps.calculator꞉> 
+"+"
+"+"
+clj꞉learningapps.calculator꞉> 
+(1 2)
+; Execution error (ClassCastException) at learningapps.calculator/eval2143 (form-init9194917033910880331.clj:212).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉learningapps.calculator꞉> 
+((read-string "+") 3 4 5)
+; Execution error (ArityException) at learningapps.calculator/eval2145 (form-init9194917033910880331.clj:216).
+; Wrong number of args (3) passed to: clojure.lang.Symbol
+clj꞉learningapps.calculator꞉> 
+(+ 3 4 5)
+12
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getOperator
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getCountCalculations
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/getNumber
+clj꞉learningapps.calculator꞉> 
+#'learningapps.calculator/init
+clj꞉learningapps.calculator꞉> 
+(init)
+Claculator
+What operation do you want to do? (* / - +)
+Wie viele Zahlen wollen sie verrechnen?
+Enter number 1
+Enter number 2
+Enter number 3
+Enter number 4
+10
+clj꞉learningapps.calculator꞉> 
+(main)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:241:1).
+; Unable to resolve symbol: main in this context
+clj꞉learningapps.calculator꞉> 
 nil
 clj꞉learningapps.core꞉> 
 #'learningapps.core/idxOf
@@ -44,33 +256,95 @@ clj꞉learningapps.core꞉> 
 clj꞉learningapps.core꞉> 
 #'learningapps.core/-main
 clj꞉learningapps.core꞉> 
+(main)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:259:1).
+; Unable to resolve symbol: main in this context
+clj꞉learningapps.core꞉> 
+(-main)
 Hello, World!
-nil
+Please choose an app to run:
+Sending interrupt.
+; Evaluation was interrupted
 clj꞉learningapps.core꞉> 
-#'learningapps.core/-main
+; Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
 clj꞉learningapps.core꞉> 
 #'learningapps.core/chooseApp
 clj꞉learningapps.core꞉> 
-#'learningapps.core/chooseApp
+(-main)
+Hello, World!
+Please choose an app to run:
+Sending interrupt.
+; Evaluation was interrupted
+clj꞉learningapps.core꞉> 
+; Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
+clj꞉learningapps.core꞉> 
+#'learningapps.core/printApps
 clj꞉learningapps.core꞉> 
 #'learningapps.core/chooseApp
 clj꞉learningapps.core꞉> 
-1
-1
+(-main)
+Hello, World!
+Please choose an app to run:
+01          Calculator      calc
+02                App2      app2
+03                App3      app3
+Claculator
+What operation do you want to do? (* / - +)
+Wie viele Zahlen wollen sie verrechnen?
+Enter number 1
+Enter number 2
+Enter number 3
+Do you want to start a new app?(y/n)
+Do you want to start a new app?(y/n)
+yes
+Please choose an app to run:
+01          Calculator      calc
+02                App2      app2
+03                App3      app3
+Claculator
+What operation do you want to do? (* / - +)
+Wie viele Zahlen wollen sie verrechnen?
+Enter number 1
+Enter number 2
+Enter number 3
+Do you want to start a new app?(y/n)
+Do you want to start a new app?(y/n)
+no
+Please choose an app to run:
+01          Calculator      calc
+02                App2      app2
+03                App3      app3
+Sending interrupt.
+; Evaluation was interrupted
 clj꞉learningapps.core꞉> 
-1
-1
+; Execution error (InterruptedException) at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject/await (AbstractQueuedSynchronizer.java:1638).
+; null
 clj꞉learningapps.core꞉> 
-c
-; Syntax error compiling at (.calva/output-window/output.calva-repl:1:7941).
-; Unable to resolve symbol: c in this context
+#'learningapps.core/end
 clj꞉learningapps.core꞉> 
+#'learningapps.calculator/init
+clj꞉learningapps.calculator꞉> 
+(-main)
+; Syntax error compiling at (.calva/output-window/output.calva-repl:329:1).
+; Unable to resolve symbol: -main in this context
+clj꞉learningapps.calculator꞉> 
 #'learningapps.core/-main
 clj꞉learningapps.core꞉> 
-#'learningapps.core/-main
-clj꞉learningapps.core꞉> 
-exit
-; Syntax error compiling at (.calva/output-window/output.calva-repl:1:7941).
-; Unable to resolve symbol: exit in this context
-clj꞉learningapps.core꞉> 
+(-main)
+Hello, World!
+Please choose an app to run:
+01          Calculator      calc
+02                App2      app2
+03                App3      app3
+Claculator
+What operation do you want to do? (* / - +)
+Wie viele Zahlen wollen sie verrechnen?
+Enter number 1
+Enter number 2
+Enter number 3
+9
+Do you want to start a new app?(y/n)
+Do you want to start a new app?(y/n)
 ; nREPL Connection was closed
