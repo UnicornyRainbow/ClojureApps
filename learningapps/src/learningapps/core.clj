@@ -28,14 +28,11 @@
 (defn end []
   (println "Do you want to start a new app?(y/n)")
   (loop [decision (read-line)]
-    (println "Do you want to start a new app?(y/n)")
     (cond
       (= decision "y")
       nil
-      ;(println "yes")
       (= decision "n")
       (System/exit 0)
-      ;(println "no")
       :else
       (recur (do (println "Invalid Argument") (println "Do you want to start a new app?(y/n)") (read-line))))))
 
