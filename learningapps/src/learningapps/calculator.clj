@@ -1,6 +1,6 @@
 (ns learningapps.calculator
-    (:require [clojure.string :as str])
-    (:gen-class))
+  (:require [clojure.string :as str])
+  (:gen-class))
 
 
 
@@ -53,4 +53,3 @@
           "*" (recur (inc i) (* oldNumber (getNumber (inc i) operator)))
           "/" (recur (inc i) (/ oldNumber (getNumber (inc i) operator)))
           (println "Invalid Operator"))))))
-
